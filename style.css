@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+.header {
+    background-color: #FFF8F3;
+    background-image: url(images/header_bg.png), url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: right bottom, left;
+}
+
+/* Header and Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px;
+    padding-top: 1px;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 1px;
+}
+
+.btn-primary{
+    color: #FFF;
+    height: 57px;
+    border-radius: 5px;
+    background: #FD6E0A;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+    padding: 14px 35px 19px 36px;
+}
+.btn-download{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    color: #FFF;
+    height: 57px;
+    border-radius: 5px;
+    background: #FD6E0A;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+}
+.btn-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FD6E0A;
+    height: 57px;
+    width: 184px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-left: 30px;
+
+}
+.icon{
+    margin-right: 5px;
+}
+
+/* banner styles */
+.banner {
+    margin: 100px 200px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 85px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-sub-title {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.banner-description {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+/* main section */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section styles */
+.about {
+    margin-top: 130px;
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    padding: 131px 157px 131px 156px;
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    color: #181818;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-title {
+    font-size: 20px;
+    color: #757575;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+    margin-left: 15px;
+}
+
+/* what i do styles */
+.peragraph {
+    margin-top: 30px;
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.what-i-do {
+    margin-top: 130px;
+    /* text-align: center; */
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+    background-color: #FFF8F3;
+}
+
+.skill {
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+}
+
+.skill-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+}
+
+.skill-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.resume {
+    margin-top: 130px;
+    margin-bottom: 113px;
+}
+
+/* Resume Style */
+
+.resume .title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.resume .sub-title {
+    font-size: 20px;
+    color: #757575;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.resume .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+
+}
+
+.resume .description-e {
+    margin-bottom: 57px;
+}
+
+.resume-content {
+    display: flex;
+    gap: 24px;
+}
+
+.resume-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.resume-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact .section-title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+
+.contact-p {
+    margin-bottom: 30px;
+}
+
+.contact input[type="text"],[type="email"],
+textarea {
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+input {
+    /* width: 461px; */
+    height: 64px;
+}
+.contact a{
+    text-decoration: none;
+}
