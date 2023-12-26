@@ -287,34 +287,63 @@ input {
 }
 
 @media screen and (max-width: 576px) {
-    .header{
+    .header {
         background-image: none;
-        
-        
     }
+
+    nav {
+        margin: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 10px;
+        align-items: start;
+    }
+
+    .btn-contact {
+        margin-left: 5px;
+        margin-top: 10px;
+        padding: 10px 40px;
+    }
+
+    .btn-download {
+        padding: 10px 12px;
+    }
+
     .skills-container,
     .resume-content,
     .contact,
     .banner,
-    .contact,
-    nav {
+    .contact {
         flex-direction: column;
         gap: 20px;
         padding: 10px 20px;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         align-items: start;
+        gap: 5px;
     }
-    .banner{
+
+    nav li {
+        margin: 0px 50px 0px 0px;
+
+    }
+
+    .nav-title {
+        margin-left: 40px;
+    }
+
+    .banner {
         margin: 0 20px;
     }
-    .banner img{
+
+    .banner img {
         width: 100%;
     }
 
     .about {
-        padding: 20px;
+        padding: 10px 10px 10px 10px;
     }
 
     .about-info-container {
@@ -328,22 +357,49 @@ input {
     textarea {
         padding: 0;
     }
+    .resume-title{
+        background-color: #FFF8F3;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width:992px) {
+    .about,
+    .contact {
+        padding: 20px;
 
-    .skills-container, .about,
-    .resume-content {
-        padding: 10px 20px;
-        
     }
-    .contact{
+
+    .contact, .banner, .skills-container {
         flex-direction: column;
     }
-    .resume .description-e2{
-        margin-top: 26px;
+
+    .contact input[type="text"],
+    [type="email"],
+    textarea {
+        padding: 0 0 0 5px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn-primary{
+        padding: 4px 35px 0px 35px;
+    }
+    .description-e{
+        margin-bottom: 57px;
+    }
+    .resume-content{
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    .btn-contact{
+        margin-left: 5px;
         
     }
-   
+    .resume-title{
+        background-color: #FFF8F3;
+    }
+
 
 }
