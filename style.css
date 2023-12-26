@@ -19,7 +19,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 0px 200px;
-    padding-top: 1px;
+    padding-top: 60px;
 }
 
 .nav-title {
@@ -38,7 +38,7 @@ nav li {
     margin-top: 1px;
 }
 
-.btn-primary{
+.btn-primary {
     color: #FFF;
     height: 57px;
     border-radius: 5px;
@@ -48,7 +48,8 @@ nav li {
     border: 0;
     padding: 14px 35px 19px 36px;
 }
-.btn-download{
+
+.btn-download {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +64,7 @@ nav li {
     font-weight: 700;
     border: 0;
 }
+
 .btn-contact {
     display: inline-flex;
     align-items: center;
@@ -78,7 +80,8 @@ nav li {
     margin-left: 30px;
 
 }
-.icon{
+
+.icon {
     margin-right: 5px;
 }
 
@@ -262,7 +265,8 @@ main {
     margin-bottom: 30px;
 }
 
-.contact input[type="text"],[type="email"],
+.contact input[type="text"],
+[type="email"],
 textarea {
     margin-bottom: 24px;
     border: 0;
@@ -277,12 +281,69 @@ input {
     /* width: 461px; */
     height: 64px;
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
 }
 
 @media screen and (max-width: 576px) {
-    .skills-container, .resume-content{
+    .header{
+        background-image: none;
+        
+        
+    }
+    .skills-container,
+    .resume-content,
+    .contact,
+    .banner,
+    .contact,
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: start;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about-info-container {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .contact input[type="text"],
+    [type="email"],
+    textarea {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width:992px) {
+
+    .skills-container, .about,
+    .resume-content {
+        padding: 10px 20px;
+        
+    }
+    .contact{
         flex-direction: column;
     }
+    .resume .description-e2{
+        margin-top: 26px;
+        
+    }
+   
+
 }
